@@ -1,0 +1,7 @@
+<h1>{{ title }}</h1>
+    <ul>
+        <li *ngFor="let o of tasks" (click)="onClick(o)">
+            {{ o.id }} - {{ o.name }}
+        </li>
+    </ul>
+    <app-tasks [task]="selectedTask"></app-tasks>
